@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="url" value="https://dev57553.service-now.com/"></parameter>
+<parameter name="Username" value="admin"></parameter>
+<parameter name="Password" value="2oaD6KN$q$vN"></parameter>
+
+  <test thread-count="5" name="Test1">
+  <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="week5.day2.CreateNewProposal"/>
+      <class name="week5.day2.Caller"/>
+<class name="week5.day2.FillMandatory"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="Test2">
+   <parameter name="browser" value="Edge"></parameter>
+    <classes>
+      <class name="week5.day2.CreateNewProposal"/>
+      <class name="week5.day2.Caller"/>
+<class name="week5.day2.FillMandatory"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
